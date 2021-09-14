@@ -4,12 +4,13 @@ header{
 
     margin-top: 1rem;
     font-family: $font-caveat;
+    font-size: $middle-size;
 
     h1{
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 20vw;
+        font-size: $title-size;
         margin-bottom: 2rem;
     }
 
@@ -34,7 +35,6 @@ header{
         }
         div{
             content: '';
-            //flex: 1 1;
             width: 100%;
             border-bottom: 1rem solid white;
             margin: auto;
@@ -46,7 +46,18 @@ header{
         display: block;
         text-align: center;
         color: white;
-        font-size: 10vw;
+        margin-bottom: 1rem;
+
+    }
+    #boutonCarte{
+        text-align: center;
+        margin-bottom: 2rem;
+        button{
+            font-size: $middle-size;
+            padding: 1rem;
+            border-radius: 1.5rem;
+            font-family: $font-caveat;
+        }
     }
     
 }
@@ -55,4 +66,21 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#ouverture{
+    ul{
+        border: 2px solid $color-text;
+        border-radius: 5px;
+        list-style: none;
+        padding: 1rem;
+        font-size: $small-size;
+        
+
+        & li:nth-child(1), li:nth-child(2){
+            color: $color-grey;
+            text-decoration: line-through;
+            text-decoration-color: red;
+        }
+    }
 }

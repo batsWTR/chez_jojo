@@ -1,6 +1,16 @@
 //font cursive
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 
+
+$font-caveat: Caveat;
+
+$color-text: white;
+$color-grey: lighten(black,60);
+
+$title-size: 20vw;
+$middle-size: 10vw;
+$small-size: 5vw;
+
 *{
     margin: 0;
     padding: 0;
@@ -9,8 +19,7 @@
 
 body{
     background-color: black;
-    color: white;
+    color: $color-text;
     font-size: 62.5%;
 }
 
-$font-caveat: Caveat;
