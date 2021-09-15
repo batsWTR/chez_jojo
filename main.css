@@ -1,4 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +24,8 @@
 }
 
 body {
-  background-color: black;
-  color: white;
+  background-color: #282725;
+  color: #f4edde;
   font-size: 62.5%;
 }
 
@@ -16,6 +33,18 @@ header {
   margin-top: 1rem;
   font-family: Caveat;
   font-size: 10vw;
+}
+
+@media screen and (min-width: 420px) {
+  header {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    font-size: 3vw;
+  }
 }
 
 header h1 {
@@ -31,6 +60,12 @@ header h1 {
           align-items: center;
   font-size: 20vw;
   margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 420px) {
+  header h1 {
+    font-size: 10vw;
+  }
 }
 
 header #logo_header {
@@ -60,6 +95,13 @@ header #logo_header #image_presentation {
       flex-shrink: 0;
 }
 
+@media screen and (min-width: 420px) {
+  header #logo_header #image_presentation {
+    width: 25vw;
+    height: 25vw;
+  }
+}
+
 header #logo_header div {
   content: '';
   width: 100%;
@@ -86,6 +128,13 @@ header #boutonCarte button {
   font-family: Caveat;
 }
 
+@media screen and (min-width: 420px) {
+  header #boutonCarte button {
+    font-size: 5vw;
+    padding: 0.5rem;
+  }
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,7 +146,20 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 2.5vw;
+  font-size: 3vw;
+}
+
+@media screen and (min-width: 420px) {
+  main {
+    font-size: 1.5vw;
+    max-width: 1400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    font-size: 1vw;
+  }
 }
 
 h2 {
@@ -105,15 +167,33 @@ h2 {
   text-align: center;
 }
 
+@media screen and (min-width: 420px) {
+  h2 {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 1.5vw;
+  }
+}
+
 article {
   margin: 2rem 0;
   width: 80%;
 }
 
+@media screen and (min-width: 1200px) {
+  article {
+    width: 60%;
+  }
+}
+
 article h2 {
   margin-bottom: 1rem;
   padding: 0.5rem;
-  border: 2px solid white;
+  border: 2px solid #f4edde;
   border-radius: 10px;
 }
 
@@ -123,14 +203,30 @@ article > div > span {
 }
 
 #ouverture ul {
-  border: 2px solid white;
+  border: 2px solid #f4edde;
   border-radius: 5px;
   list-style: none;
   padding: 1rem;
   font-size: 5vw;
 }
 
-#ouverture ul li:nth-child(1), #ouverture ul li:nth-child(2) {
+@media screen and (min-width: 420px) {
+  #ouverture ul {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #ouverture ul {
+    font-size: 1.5vw;
+  }
+}
+
+#ouverture ul span {
+  float: right;
+}
+
+#ouverture ul li:nth-child(1), #ouverture ul li:nth-child(2), #ouverture ul li:nth-child(1) > span, #ouverture ul li:nth-child(2) > span {
   color: #999999;
   text-decoration: line-through;
   -webkit-text-decoration-color: red;
@@ -146,12 +242,27 @@ article > div > span {
   font-size: 5vw;
 }
 
+@media screen and (min-width: 420px) {
+  #listeSauces li {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #listeSauces li {
+    font-size: 1.5vw;
+  }
+}
+
 #etoile {
   cursor: pointer;
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
 }
 
 #carte {
   width: 90%;
+  height: auto;
   border-radius: 15px;
   margin-bottom: 2rem;
 }

@@ -6,8 +6,20 @@ $font-caveat: Caveat;
 
 
 //-------------------------- Couleurs ---------
-$color-text: white;
+$color-text: #f4edde;
 $color-grey: lighten(black,60);
+$color-back: #282725;
+
+
+
+
+//------------------ Font-size
+$title-size: 20vw;
+$middle-size: 10vw;
+$small-size: 5vw;
+$vsmall-size: 3vw;
+$vvsmall-size: 1.5vw;
+
 
 //------------------- Breakpoints ------------
 $break-tablet:420px;
@@ -15,7 +27,7 @@ $break-pc: 1200px;
 
 @mixin tablet{
     @media screen and(min-width: $break-tablet){
-        @content;
+       @content;
     }
 }
 
@@ -25,12 +37,13 @@ $break-pc: 1200px;
     }
 }
 
+//------------------------- animation etoile
+@keyframes blink {
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    
+}
 
-//------------------ Font-size
-$title-size: 20vw;
-$middle-size: 10vw;
-$small-size: 5vw;
-$vsmall-size: 2.5vw;
 
 *{
     margin: 0;
@@ -39,7 +52,7 @@ $vsmall-size: 2.5vw;
 }
 
 body{
-    background-color: black;
+    background-color: $color-back;
     color: $color-text;
     font-size: 62.5%;
 }
