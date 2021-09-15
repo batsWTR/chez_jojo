@@ -4,9 +4,29 @@
 
 $font-caveat: Caveat;
 
+
+//-------------------------- Couleurs ---------
 $color-text: white;
 $color-grey: lighten(black,60);
 
+//------------------- Breakpoints ------------
+$break-tablet:420px;
+$break-pc: 1200px;
+
+@mixin tablet{
+    @media screen and(min-width: $break-tablet){
+        @content;
+    }
+}
+
+@mixin pc{
+    @media screen and(min-width: $break-pc){
+        @content;
+    }
+}
+
+
+//------------------ Font-size
 $title-size: 20vw;
 $middle-size: 10vw;
 $small-size: 5vw;

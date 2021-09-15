@@ -1,5 +1,5 @@
 
-
+//-------------------------- HEADER
 header{
 
     margin-top: 1rem;
@@ -62,6 +62,7 @@ header{
     
 }
 
+//------------------------------ General
 main{
     display: flex;
     flex-direction: column;
@@ -69,6 +70,29 @@ main{
     font-size: $vsmall-size;
 }
 
+h2{
+    font-size: $small-size;
+    text-align: center;
+}
+article{
+    margin: 2rem 0;
+    width: 80%;
+
+    h2{
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        border: 2px solid $color-text;
+        border-radius: 10px;
+    }
+    & > div > span{
+        font-weight: bold;
+        float: right;
+    }
+}
+
+
+
+//-------------------------------- Particulier
 #ouverture{
     ul{
         border: 2px solid $color-text;
@@ -88,17 +112,23 @@ main{
 
 #sauces{
     cursor: pointer;
-    margin: 2rem 0;
+    margin-top: 2rem;
 
 }
-h2{
-    font-size: $small-size;
-    text-align: center;
+#listeSauces{
+    li{
+        font-size: $small-size;
+
+    }
 }
-article > div > span{
-    font-weight: bold;
-}
+
 #etoile{
     cursor: pointer;
 
+}
+
+#carte{
+    width: 90%;
+    border-radius: 15px;
+    margin-bottom: 2rem;
 }
