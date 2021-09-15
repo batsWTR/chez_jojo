@@ -43,7 +43,7 @@ header {
 
 @media screen and (min-width: 1200px) {
   header {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 }
 
@@ -146,7 +146,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 3vw;
+  font-size: 3.5vw;
 }
 
 @media screen and (min-width: 420px) {
@@ -169,7 +169,7 @@ h2 {
 
 @media screen and (min-width: 420px) {
   h2 {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 }
 
@@ -212,7 +212,7 @@ article > div > span {
 
 @media screen and (min-width: 420px) {
   #ouverture ul {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 }
 
@@ -244,7 +244,7 @@ article > div > span {
 
 @media screen and (min-width: 420px) {
   #listeSauces li {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 }
 
